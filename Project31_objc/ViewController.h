@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
-
+@interface ViewController : UIViewController <UIWebViewDelegate, UITextFieldDelegate, UIGestureRecognizerDelegate>
+@property (weak, nonatomic) IBOutlet UITextField *addressBar;
+@property (weak, nonatomic) IBOutlet UIStackView *stackView;
+@property (weak) UIWebView *activeWebView;
 @end
 
